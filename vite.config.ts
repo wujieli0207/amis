@@ -4,6 +4,7 @@ import path from 'path';
 import svgr from 'vite-plugin-svgr';
 import monacoEditorPlugin from 'vite-plugin-monaco-editor';
 import replace from '@rollup/plugin-replace';
+import vue2 from '@vitejs/plugin-vue2';
 import fis3 from './scripts/fis3plugin';
 import markdown from './scripts/markdownPlugin';
 import mockApi from './scripts/mockApiPlugin';
@@ -34,7 +35,8 @@ export default defineConfig({
         dimensions: false
       }
     }),
-    monacoEditorPlugin({})
+    monacoEditorPlugin({}),
+    vue2()
   ],
   optimizeDeps: {
     include: ['amis-formula/lib/doc'],
