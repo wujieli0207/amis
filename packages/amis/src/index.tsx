@@ -154,6 +154,9 @@ import './renderers/MultilineText';
 import './renderers/OfficeViewer';
 import './renderers/AMIS';
 
+// fe-horionz-ui 组件渲染器
+export * from './renderers/FeRenderers';
+
 import './compat';
 import './schemaExtend';
 import type {

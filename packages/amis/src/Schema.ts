@@ -134,6 +134,9 @@ import {PasswordSchema} from './renderers/Password';
 import {WordsSchema} from './renderers/Words';
 import {RadioControlSchema} from './renderers/Form/Radio';
 
+// fe-horizon-ui 渲染器 Schema
+import * as FeRenderers from './renderers/FeRenderers';
+
 // 每加个类型，这补充一下。
 export type SchemaType =
   | 'form'
@@ -224,6 +227,7 @@ export type SchemaType =
   | 'control'
   | 'input-array'
   | 'button'
+  | 'fe-button'
   | 'submit'
   | 'reset'
   | 'button-group-select'
@@ -487,7 +491,10 @@ export type SchemaObject =
   | DateRangeSchema
   | MultilineTextSchema
   | PasswordSchema
-  | WordsSchema;
+  | WordsSchema
+
+  // fe-horizon-ui 组件 schema
+  | FeRenderers.FeButtonSchema;
 
 export type SchemaCollection =
   | SchemaObject

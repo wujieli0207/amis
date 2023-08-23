@@ -158,3 +158,6 @@ export * from './Reset';
 export * from './Submit';
 export * from './Wrapper';
 export * from './ColumnToggler';
+
+// fe-horizon-ui 组件
+export * from './FePlugin';
