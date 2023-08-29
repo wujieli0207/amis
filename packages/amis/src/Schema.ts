@@ -227,7 +227,6 @@ export type SchemaType =
   | 'control'
   | 'input-array'
   | 'button'
-  | 'fe-button'
   | 'submit'
   | 'reset'
   | 'button-group-select'
@@ -361,7 +360,11 @@ export type SchemaType =
   | 'native-time'
   | 'native-number'
   | 'code'
-  | 'tooltip-wrapper';
+  | 'tooltip-wrapper'
+
+  // fe-horizon-ui 组件
+  | 'fe-button'
+  | 'fe-card';
 
 export type SchemaObject =
   | PageSchema
@@ -494,7 +497,8 @@ export type SchemaObject =
   | WordsSchema
 
   // fe-horizon-ui 组件 schema
-  | FeRenderers.FeButtonSchema;
+  | FeRenderers.FeButtonSchema
+  | FeRenderers.FeCardSchema;
 
 export type SchemaCollection =
   | SchemaObject
